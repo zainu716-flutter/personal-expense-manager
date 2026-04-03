@@ -1,16 +1,30 @@
-# flutter_application_2
+# Personal Expense Manager
 
-A new Flutter project.
+A Flutter mobile app for managing personal expenses with Firebase backend.
 
-## Getting Started
+## Features
+- Multi-account management
+- Real-time transaction sync (Firebase Firestore)
+- Firebase Authentication
+- Running balance per transaction
+- Date-grouped transaction list
+- Copy transactions across accounts
+- PDF export
+- Search and filter
+- Draggable floating calculator
+- Indian number formatting
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- Flutter & Dart
+- Firebase Firestore
+- Firebase Authentication
+- Provider (State Management)
+- SharedPreferences
+- PDF & Printing packages
 
-A few resources to get you started if this is your first Flutter project:
+## App Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screen1](Screenshots/flutter_01.png.jpeg)
+![Screen2](Screenshots/flutter_02.png.jpeg)
+![Screen3](Screenshots/flutter_03.png.jpeg)
+![Screen4](Screenshots/flutter_04.png.jpeg)
