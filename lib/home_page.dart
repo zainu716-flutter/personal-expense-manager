@@ -325,28 +325,9 @@ class _HomePageState extends State<HomePage> with IndianFormatMixin {
                     accountProvider.selectedAccountId,
                   ),
                   builder: (context, snapshot) {
-                    // ── Loading ────────────────
-                    if (snapshot.connectionState == ConnectionState.waiting) {
-                      return const Center(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            CircularProgressIndicator(color: Colors.green),
-                            SizedBox(height: 16),
-                            Text(
-                              'Loading transactions...',
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontFamily: 'monospace',
-                                fontSize: 13,
-                              ),
-                            ),
-                          ],
-                        ),
-                      );
-                    }
-
                     // ── Empty / Error ──────────
+                    // Note: No loading check — Firestore serves local cache
+                    // instantly, so the spinner is unnecessary and wastes time.
                     if (snapshot.hasError ||
                         !snapshot.hasData ||
                         snapshot.data!.docs.isEmpty) {
